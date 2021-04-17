@@ -362,54 +362,47 @@
   
    <div class="blackdrop is-hidden" data-modal>
     <div class="modal">
-        <h2 class="modal-window-title">Оставьте свои данные, мы вам перезвоним</h2>
         <button class="btd-close" data-modal-close>
             <svg class="btd-close-icon" width="15" height="15" >
                 <use href="./images/icon/close.svg#icon-close"> </use>
         </svg>
         </button>
-        <form class="callback-form">
-            <p class="md-title">Оставьте свои данные, мы вам перезвоним</p>
-            <label class="form-field">
-              <span class="callback-md-label-txt">Имя</span>
-              <input class="callback-md-input" type="text" name="user-name" id="user-name" />
-              <span class="callback-md-label-icon">
-                <svg class="md-form-input-icon" width="12" height="12">
-                  <use href="./images/sprite.svg#icon-person-black"></use>
-                </svg>
-              </span>
-            </label>
-            <label class="form-field">
-              <span class="callback-md-label-txt">Телефон</span>
-              <input class="callback-md-input" type="tel" name="tel" id="tel" />
-              <span class="callback-md-label-icon">
-                <svg class="md-form-input-icon" width="12" height="12">
-                  <use href="./images/sprite.svg#icon-phone-black"></use>
-                </svg>
-              </span>
-            </label>
-            <label class="form-field">
-              <span class="callback-md-label-txt">Почта</span>
-              <input class="callback-md-input" type="email" name="email" id="email" />
-              <span class="callback-md-label-icon">
-                <svg class="md-form-input-icon" width="12" height="12">
-                  <use href="./images/sprite.svg#icon-email-black"></use>
-                </svg>
-              </span>
-            </label>
-            <label class="form-field">
-              <span class="callback-md-label-feedback">Комментарий</span>
-              <textarea class="textarea" name="feedback" id="feedback" rows="6" placeholder="Введите текст"> </textarea>
-            </label>
-            <label class="md-license-label">
-              <input class="callback-md-check-original" type="checkbox" name="license" id="license" value="license" />
-              <span class="callback-md-check-custom"></span>
-              <span class="callback-md-check-txt">Соглашаюсь с рассылкой и принимаю</span>
-              <a href="" class="modal-license-link">Условия договора</a>
-            </label>
-            <div class="md-submit-btn-box">
-              <button type="submit" class="md-submit-btn">Отправить</button>
+        <form class="modal-form">
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <div class="form-modal-input">
+              <label for="user">Имя</label>
+              <input type="user" name="user" id="user" class="modal-input" required autocomplete="off" />
+              <svg class="modal-icon">
+                <use href="./images/address.svg#icon-user"></use>
+              </svg>
             </div>
+            <div class="form-modal-input">
+              <label for="tel">Телефон</label>
+              <input type="tel" name="tel" id="tel" class="modal-input" required />
+              <svg class="modal-icon">
+                <use href="./images/address.svg#icon-phone"></use>
+              </svg>
+            </div>
+            <div class="form-modal-input">
+              <label for="email">Почта</label>
+              <input type="email" name="email" id="email" class="modal-input" autocomplete="off" />
+              <svg class="modal-icon">
+                <use href="./images/address.svg#icon-email"></use>
+              </svg>
+            </div>
+            <div class="form-modal-input">
+              <label for="comment">Комментарий</label>
+              <textarea class="comment-form" id="comment" placeholder="Введите текст" rows="6"></textarea>
+            </div>
+            <div class="form-check">
+              <label>
+                <input type="checkbox" class="input-check" />
+                <span class="check-icon"></span>
+                Соглашаюсь с рассылкой и принимаю
+                <a href="" class="label-link">Условия договора</a>
+              </label>
+            </div>
+            <button type="submit" class="form-button">Отправить</button>
           </form>
     </div>
 </div>
