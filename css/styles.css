@@ -1058,6 +1058,7 @@ flex-wrap: wrap;
       }
  .input-check:checked + .check-icon {
         background-color: var(--accent-color);
+        background-image: url(../images/Vecto.svg);
         border: none;
         background-size: contain;
         background-position: center;
